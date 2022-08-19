@@ -1,0 +1,39 @@
+{
+  "name": "mdast-hast-extension-inline-factory",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "set TS_NODE_FILES=true & node -r ts-node/register/transpile-only src/index.ts",
+    "nodemon": "nodemon --watch src/**/*.ts --watch src/**/*.js --exec node -r ts-node/register/transpile-only src/index.ts",
+    "eslint": "eslint src/**/*.{js,ts,tsx}"
+  },
+  "type": "module",
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "files": [
+    "src/",
+    "lib/",
+    "index.d.ts",
+    "index.js"
+  ],
+  "exports": {
+    "development": "./src/index.js",
+    "default": "./index.js"
+  },
+  "dependencies": {
+    "mdast-util-inline-factory": "github:TRIAEIOU/mdast-util-inline-factory",
+    "micromark-extension-gfm-strikethrough": "^1.0.4",
+    "micromark-extension-inline-factory": "github:TRIAEIOU/micromark-extension-inline-factory"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.5",
+    "hast-util-from-html": "^1.0.0",
+    "hast-util-to-html": "^8.0.3",
+    "hast-util-to-mdast": "^8.3.1",
+    "mdast-util-from-markdown": "^1.2.0",
+    "mdast-util-to-hast": "^12.1.2",
+    "mdast-util-to-markdown": "^1.3.0",
+    "micromark-util-types": "^1.0.2",
+    "ts-node": "^10.9.1"
+  }
+}
