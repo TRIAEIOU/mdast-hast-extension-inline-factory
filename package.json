@@ -12,7 +12,6 @@
   "types": "index.d.ts",
   "files": [
     "src/",
-    "lib/",
     "index.d.ts",
     "index.js"
   ],

@@ -58,7 +58,7 @@
  *   Length of symbol(s), e.g. 2 for '~~'
  */
 import { inlineFactoryFromMarkdown, inlineFactoryToMarkdown } from 'mdast-util-inline-factory';
-import { inlineFactory, inlineFactoryHtml } from 'micromark-extension-inline-factory/dev';
+import { inlineFactory, inlineFactoryHtml } from 'micromark-extension-inline-factory';
 import { all as mdastAll } from 'mdast-util-to-hast';
 import { all as hastAll } from 'hast-util-to-mdast';
 /**
