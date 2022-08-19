@@ -6,6 +6,8 @@ Generalization of woorm's code in micromark-extension-gfm-strikethrough to allow
 ## Use
 Use the function `createEmphasis` with appropriate values to create a set of extensions to be used in the different manipulations. See example below. The symbol(s) must consist of identical characters that will be the start and end of the markdown span (similar to `*emphasis*` and `**strong**`). Note that it is possible to use the same character but different lengths for different markdown spans, i.e. it is possible to use both `~` for subscript and `~~` for strikethrough at the same time.
 
+The extension depends on [`micromark-extension-inline-factory`](https://github.com/TRIAEIOU/micromark-extension-inline-factory) and [`mdast-util-inline-factory`](https://github.com/TRIAEIOU/mdast-util-inline-factory). `package.json` is set up with those dependencies so run `npm i`.
+
 ## Example
 <pre><code>
 import {createEmphasis} from './src/index';

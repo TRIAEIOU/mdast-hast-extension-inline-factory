@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "mdast-util-inline-factory": "github:TRIAEIOU/mdast-util-inline-factory",
-    "micromark-extension-gfm-strikethrough": "^1.0.4",
     "micromark-extension-inline-factory": "github:TRIAEIOU/micromark-extension-inline-factory"
   },
   "devDependencies": {
